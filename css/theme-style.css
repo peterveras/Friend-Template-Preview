@@ -27,10 +27,28 @@
 14. Mansory Layout
 
 ===================== */
+.theme-light {
+  --color-primary: #26e482;
+  --color-secondary: white;
+  --color-tertiary: #232325;
+  --font-color: #232325;
+  --toggle-menu-icon: url(../img/icons/menu-light.svg);
+}
+.theme-dark {
+  --color-primary: #26e482;
+  --color-secondary: #232325;
+  --color-tertiary: white;
+  --font-color: whitesmoke;
+  --toggle-menu-icon: url(../img/icons/menu-dark.svg);
+}
 
 /* 1. Navigation */
 
 /* Nav bar */
+
+.text-nav {
+  color: #232325;
+}
 .pointer:hover {
   cursor: pointer;
 }
@@ -41,21 +59,13 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #232325;
+  color: var(--font-color);
 }
 
 /* Hamburger */
 
-.navbar-dark .navbar-toggler-icon {
-  background-image: url(../img/icons/menu-dark.svg);
-}
-
-.navbar-dark .navbar-toggler {
-  border-color: transparent;
-}
-
 .navbar-light .navbar-toggler-icon {
-  background-image: url(../img/icons/menu-light.svg);
+  background-image: var(--toggle-menu-icon);
 }
 
 .navbar-light .navbar-toggler {
@@ -80,34 +90,25 @@
 
 /* 2. Tab */
 
-.nav-link {
-  color: whitesmoke;
-}
-
 .active > .nav-link {
-  color: #232325;
-  background-color: #89ff14;
+  color: var(--font-color);
+  background-color: var(--color-primary);
   border-radius: 0px;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #232325;
-  background-color: #89ff14;
+  background-color: var(--color-primary);
   border-radius: 0;
 }
 
 .nav-pills .nav-link {
   border-radius: 0px;
   background-color: #353535;
-  color: whitesmoke;
+  color: white;
 }
 
-.active > .nav-link {
-  color: #232325;
-  background-color: #89ff14;
-  border-radius: 0;
-}
 /* Tabs End */
 
 /* 3. Links */
@@ -116,20 +117,29 @@ a {
   color: hotpink;
 }
 a:hover {
-  color: hotpink;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.nav-link {
+  color: whitesmoke;
 }
 
 .nav-link:hover {
   text-decoration: underline;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  text-decoration: underline;
-  color: whitesmoke;
+a.nav-link:hover {
+  cursor: pointer;
 }
 
-.text-black:hover {
-  color: #232325;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--font-color);
+}
+
+.text-color:hover {
+  color: var(--font-color);
 }
 
 /* 4. Hero Images */
@@ -138,73 +148,29 @@ a:hover {
 .hero-img-1 {
   height: 80vh; /* Change this number to change the height of the image */
   min-height: 500px;
-  background-image: url("../img/works/work-3/pexels-irina-iriser-1090977.jpg"); /* Change the image itself here */
+  background-image: url("../img/works/work-9/pexels-steve-johnson-2784948.jpg"); /* Change the image itself here */
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-  background-color: #232325;
+  background-color: var(--color-primary);
   background-repeat: no-repeat;
 }
 
 /* Hero Image End */
 
-.product_box {
-  margin-bottom: 30px;
-  overflow: hidden;
-  background-color: #3d3d3d;
-}
-
-.product_img {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-  object-fit: fill;
-}
-
-.product_img_horizontal {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-  object-fit: fill;
-  padding-left: 0px;
-}
-
 /* 5. Buttons*/
 
-/* Button Black */
-.btn-black {
-  background: #232325;
-  border: solid 2px #232325;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: whitesmoke;
-  text-transform: uppercase;
+button.navbar-toggler:focus {
+  border-radius: 0px;
 }
 
-.btn-black:hover {
-  background: #89ff14;
-  border: solid 2px #89ff14;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
+.navbar-light .navbar-toggler:focus {
+  border-radius: 0px;
 }
-/* Button White */
-.btn-white {
-  background: white;
-  border: solid 2px white;
+
+.primary-btn {
+  background: var(--color-primary);
+  border: solid 2px var(--color-primary);
   padding: 10px 41px;
   outline: 0;
   font-size: 16px;
@@ -215,9 +181,74 @@ a:hover {
   text-transform: uppercase;
 }
 
-.btn-white:hover {
-  background: #89ff14;
-  border: solid 2px #89ff14;
+.primary-btn:hover {
+  background: var(--color-tertiary);
+  border: solid 2px var(--color-tertiary);
+  padding: 10px 41px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 160px;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.secondary-btn {
+  background: var(--color-secondary);
+  border: solid 2px var(--color-tertiary);
+  padding: 10px 41px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 160px;
+  color: var(--color-tertiary);
+  text-transform: uppercase;
+}
+
+.secondary-btn:hover {
+  background: var(--color-tertiary);
+  border: solid 2px var(--color-secondary);
+  padding: 10px 41px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 160px;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.tertiary-btn {
+  background: var(--color-secondary);
+  border: solid 2px var(--color-secondary);
+  padding: 10px 41px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 160px;
+  color: var(--font-color);
+  text-transform: uppercase;
+}
+
+.tertiary-btn:hover {
+  background: var(--color-tertiary);
+  border: solid 2px var(--color-tertiary);
+  padding: 10px 41px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 160px;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.primary-btn-exception {
+  background: var(--color-primary);
+  border: solid 2px var(--color-primary);
   padding: 10px 41px;
   outline: 0;
   font-size: 16px;
@@ -228,205 +259,56 @@ a:hover {
   text-transform: uppercase;
 }
 
-/* Buttons - Dark  Theme*/
-.primary-btn-dark {
-  background: #89ff14;
-  border: solid 2px #89ff14;
+.primary-btn-exception:hover {
+  background: var(--color-secondary);
+  border: solid 2px var(--color-secondary);
   padding: 10px 41px;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
   min-width: 160px;
-  color: #232325;
+  color: var(--font-color);
   text-transform: uppercase;
 }
-
-.primary-btn-dark:hover {
-  background: whitesmoke;
-  border: solid 2px whitesmoke;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
-}
-
-.secondary-btn-dark {
-  background: none;
-  border: solid 2px white;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: white;
-  text-transform: uppercase;
-}
-
-.secondary-btn-dark:hover {
-  background: white;
-  border: solid 2px white;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
-}
-
-.tertiary-btn-dark {
-  background: #232325;
-  border: solid 2px #232325;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: whitesmoke;
-  text-transform: uppercase;
-}
-
-.tertiary-btn-dark:hover {
-  background: white;
-  border: solid 2px white;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
-}
-
-/* Buttons Dark Theme End */
-
-/* Buttons Light Theme */
-
-/* Buttons */
-
-.primary-btn-light {
-  background: #89ff14;
-  border: solid 2px #89ff14;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
-}
-
-.primary-btn-light:hover {
-  background: #232325;
-  border: solid 2px #232325;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: whitesmoke;
-  text-transform: uppercase;
-}
-
-.secondary-btn-light {
-  background: none;
-  border: solid 2px #232325;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
-}
-
-.secondary-btn-light:hover {
-  background: #89ff14;
-  border: solid 2px #89ff14;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
-}
-
-.tertiary-btn-light {
-  background: none;
-  border: solid 2px white;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
-}
-.tertiary-btn-light:hover {
-  background: #89ff14;
-  border: solid 2px #89ff14;
-  padding: 10px 41px;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  min-width: 160px;
-  color: #232325;
-  text-transform: uppercase;
-}
-
-/* Buttons Light Theme End */
 
 /* 7. Text Colors */
+.text-color-x {
+  color: var(--color-secondary);
+}
+
 .text-white {
   color: whitesmoke;
 }
 
-.text-pale-night-white {
+.text-code {
   color: #6b708a;
 }
 
-.text-black {
-  color: #232325;
+.text-color {
+  color: var(--font-color);
 }
 
 /* 8. Background Colors */
 
-.highlight-color {
-  background-color: #89ff14;
-}
-
-.bg-black {
-  background-color: #232325;
-}
-
-.bg-grey {
-  background-color: #313131;
-}
-
 .bg-pale-night {
-  background-color: #242736;
+  background-color: #2d2d2d;
 }
 
-.bg-white {
-  background-color: whitesmoke;
+.highlight-color {
+  background-color: var(--color-primary);
+}
+
+.bg-color {
+  background-color: var(--color-secondary);
 }
 /* 7. Card */
+
+.card-body {
+  border-radius: 0;
+  background-color: var(--color-tertiary);
+  padding: 20px;
+}
 
 .card {
   position: relative;
@@ -443,19 +325,11 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: 15px 15px 0px #89ff14;
+  box-shadow: 15px 15px 0px var(--color-primary);
   background-color: rgb(255, 255, 255);
   transform: translateY(-8px);
   border-color: transparent;
   cursor: pointer;
-}
-
-.card__info {
-  padding: 20px;
-}
-
-.card-footer {
-  background-color: white;
 }
 
 .card-no-hover {
@@ -468,15 +342,6 @@ a:hover {
   background-clip: border-box;
   border: 0 solid rgba(0, 0, 0, 0.125);
   margin-bottom: 60px;
-}
-
-.card__action {
-  color: #161616;
-  font-weight: 700;
-}
-.card__action:hover {
-  color: #161616;
-  font-weight: 700;
 }
 
 /* 8. Modal */
@@ -496,7 +361,7 @@ a:hover {
 }
 
 .modal-body {
-  padding: 0;
+  padding: 0px;
 }
 
 /* 9. Drop Down */
@@ -519,7 +384,7 @@ a:hover {
 .dropdown-item:hover {
   color: #232325;
   text-decoration: none;
-  background-color: #89ff14;
+  background-color: var(--color-primary);
 }
 
 /* 10. Work Thumbnail */
@@ -528,7 +393,7 @@ a:hover {
 }
 
 .work-thumbnail:hover {
-  box-shadow: 15px 15px 0px #89ff14;
+  box-shadow: 15px 15px 0px var(--color-primary);
   transform: translateY(-8px);
   cursor: pointer;
 }
@@ -549,72 +414,43 @@ a:hover {
 }
 
 .page-item.active .page-link {
-  color: #3d3d3d;
+  color: #232325;
   pointer-events: none;
   cursor: auto;
-  background-color: #89ff14;
-  border-color: solid 2px transparent;
+  background-color: var(--color-primary);
+  border-color: solid 2px var(--color-secondary) inset;
   border-radius: 0px;
 }
 
-.light .page-link {
+.page-link {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: white;
-  background-color: #232325;
+  color: var(--color-secondary);
+  background-color: var(--color-tertiary);
   border-color: solid 2px transparent;
   border-radius: 0px;
 }
 
-.light .page-link:hover {
-  position: relative;
-  display: block;
-  padding: 0.5rem 0.75rem;
-  margin-left: -1px;
-  line-height: 1.25;
-  color: #232325;
-  background-color: #89ff14;
-  border-color: solid 2px transparent;
-  border-radius: 0px;
-}
-
-.dark .page-link {
+.page-link:hover {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
   color: #232325;
-  background-color: whitesmoke;
+  background-color: var(--color-primary);
   border-color: solid 2px transparent;
   border-radius: 0px;
 }
 
-.dark .page-link:hover {
-  position: relative;
-  display: block;
-  padding: 0.5rem 0.75rem;
-  margin-left: -1px;
-  line-height: 1.25;
-  color: #232325;
-  background-color: #89ff14;
-  border-color: solid 2px transparent;
-  border-radius: 0px;
-}
-
-/* 12. Card Blog post */
-
-.card-body {
-  border-radius: 0;
-}
 .card-footer {
   border-radius: 0;
 }
 
-/* 13. Mansory Layout */
+/* 12. Mansory Layout */
 
 .masonry {
   /* Masonry container */
@@ -655,9 +491,9 @@ a:hover {
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   .masonry {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
@@ -674,31 +510,70 @@ a:hover {
     column-count: 2;
   }
 }
-/* Search Bar */
 
-#searchbar {
-  margin-left: 15%;
-  padding: 15px;
-  border-radius: 10px;
+/* Selection Color */
+
+body p::selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body p::-moz-selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body p::-webkit-selection {
+  background: var(--color-primary);
+  color: #232325;
 }
 
-input[type="text"] {
-  width: 30%;
-  -webkit-transition: width 0.15s ease-in-out;
-  transition: width 0.15s ease-in-out;
+body h1::selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body h1::-moz-selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body h1::-webkit-selection {
+  background: var(--color-primary);
+  color: #232325;
 }
 
-/* When the input field gets focus, 
-     change its width to 100% */
-input[type="text"]:focus {
-  width: 70%;
+body h2::selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body h2::-moz-selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body h2::-webkit-selection {
+  background: var(--color-primary);
+  color: #232325;
 }
 
-#list {
-  font-size: 1.5em;
-  margin-left: 90px;
+body h3::selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body h3::-moz-selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body a::-webkit-selection {
+  background: var(--color-primary);
+  color: #232325;
 }
 
-.animals {
-  display: list-item;
+body a::selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body a::-moz-selection {
+  background: var(--color-primary);
+  color: #232325;
+}
+body a::-webkit-selection {
+  background: var(--color-primary);
+  color: #232325;
 }
