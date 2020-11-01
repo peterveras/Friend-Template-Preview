@@ -80,7 +80,7 @@
                     <p class="text-color">Thanks for purchasing this theme, this is how everything is organized:</p>
                     <pre class="bg-pale-night rounded p-2">
                             <code class="text-white flex-wrap">
-    ../bootstrap-friend-template
+    ../toucan-theme
     |
     |                            
     └── ─→ css &#40;folder with all the CSS files needed for theme&#41;
@@ -208,7 +208,8 @@
                         <p class="text-color top_30">
                             2. Go to the <code>typography.css</code> file and change the
                             font attributes on the declaration: body, p, li, a, h1, h2, and h3 with the font you
-                            linked, They will look something like this:
+                            linked. Again, that search-and-replace feature can help. The code will look something like
+                            this:
                         </p>
 
                         <code>
@@ -240,7 +241,7 @@
                         </h3>
                         <!-- Navigation -->
                         <div class="padbot_30">
-                            <img class="d-block w-100" src="img/documentation/dark-navbar.png">
+                            <img class="d-block w-100" src="img/documentation/light-navbar.png">
                         </div>
                         <!-- Navigation -->
                         <code>
@@ -276,23 +277,7 @@
                   <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"nav-link js-scroll-trigger"</span> href<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"shop.html"</span><span style="color:#f8e947; ">&gt;</span>
                     Shop
                   <span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                <span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">li</span><span style="color:#f8e947; ">&gt;</span>
-                <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">li</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"nav-item padding_30_left dropdown"</span><span style="color:#f8e947; ">&gt;</span>
-                  <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"nav-link dropdown-toggle"</span> href<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"#"</span> id<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"navbarDropdownPortfolio"</span> data-toggle<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown"</span>
-                    aria-haspopup<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"true"</span> aria-expanded<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"false"</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">span</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">""</span><span style="color:#f8e947; ">&gt;</span>Color<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">span</span><span style="color:#f8e947; ">&gt;</span>
-                  <span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                  <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-menu dropdown-menu-right text-black"</span> aria-labelledby<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"navbarDropdownPortfolio"</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-item"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"swapcolor('css/mint.css');"</span><span style="color:#f8e947; ">&gt;</span>Mint<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-item"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"swapcolor('css/blue.css');"</span><span style="color:#f8e947; ">&gt;</span>Blue<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-item"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"swapcolor('css/pink.css');"</span><span style="color:#f8e947; ">&gt;</span>Pink<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-item"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"swapcolor('css/yellow.css');"</span><span style="color:#f8e947; ">&gt;</span>Yellow<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-item"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"swapcolor('css/purple.css');"</span><span style="color:#f8e947; ">&gt;</span>Purple<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-item"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"swapcolor('css/turquoise.css');"</span><span style="color:#f8e947; ">&gt;</span>Turquoise<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-item"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"swapcolor('css/orange.css');"</span><span style="color:#f8e947; ">&gt;</span>Orange<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"dropdown-item"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"swapcolor('css/neon-green.css');"</span><span style="color:#f8e947; ">&gt;</span>Neon Green<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">a</span><span style="color:#f8e947; ">&gt;</span>
-                  <span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">div</span><span style="color:#f8e947; ">&gt;</span>
-                <span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">li</span><span style="color:#f8e947; ">&gt;</span>
+                <span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">li</span><span style="color:#f8e947; ">&gt;</span>         
                 <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">li</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"nav-item padding_30_left"</span><span style="color:#f8e947; ">&gt;</span>
                   <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"nav-link js-scroll-trigger no-padding-right"</span> onclick<span style="color:#FFFFFF; ">=</span><span style="color:#26e482; ">"toggleTheme()"</span><span style="color:#f8e947; ">&gt;</span>
                   ◐
