@@ -141,7 +141,7 @@ a:hover {
 }
 
 .no-underline {
-  text-decoration: none;
+  text-decoration: underline var(--color-tertiary);
 }
 
 .nav-link {
@@ -467,6 +467,12 @@ button.navbar-toggler:focus {
   background-color: var(--color-primary);
   border-color: solid 2px transparent;
   border-radius: 0px;
+}
+
+.page-link:focus {
+  color: var(--color-secondary);
+  background-color: var(--color-tertiary);
+  box-shadow: 0 0 0 0.25rem var(--color-primary);
 }
 
 .card-footer {
