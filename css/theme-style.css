@@ -43,7 +43,7 @@
   --color-tertiary: white;
   --font-color: whitesmoke;
   --links-color: #ff5cad;
-  --toggle-menu-icon: url("img/icons/menu-dark.svg");
+  --toggle-menu-icon: url("/img/icons/menu-dark.svg");
 }
 
 /* 1. Navigation */
