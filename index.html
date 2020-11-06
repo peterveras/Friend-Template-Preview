@@ -121,7 +121,7 @@
 
                 <!-- Colors  -->
                 <div id="colors" class="padtop_30">
-                    <hr class="padtop_15">
+                    <hr>
                     <h1 class="text-color padbot_30">Colors</h1>
                     <p class="text-color">This template comes with 8 different color choices. However, if none
                         of those float your boat; changing the highlight color to any other color is pretty simple.
@@ -144,45 +144,51 @@
                     </p>
                     <h2 class="text-color padtop_30">Text on Navbar</h2>
                     <p class="text-color">
-                        &#40;Optional&#41; change the color of the text sitting over the highlight on the
-                        navbar:</p>
+                        &#40;Optional&#41; change the color of the text sitting over the highlight color on the
+                        navbar, for example in the case of this page would be the word "Documentation" in your template
+                        it should say "Toucan"</p>
                     <ul class="text-color">
                         <li>
                             Go to the tag <code>&#60;nav&#62;&#60;/nav&#62;</code> on the top of your html pages
                         </li>
                         <li>
                             <p>
-                                Change the class <code>text-nav</code> to <code>text-white</code>.
-                                This step is optional since the black text may read well on the color you chose,
-                                however if the color you chose is of a dark hue white text may offer a better
-                                contrast. Now if you want to get creative and use other color create a class wiht the
-                                desired color and replace it. Have fun.
-                                The class you want to change would be next to <code>text-upercase</code>. This is
-                                what it looks like:
+                                If you want that text to be white, change the class <code>text-nav</code> to
+                                <code>text-white</code>. This is where that is locate:
+                                <code>
+
+                                    <pre class="bg-pale-night rounded" style="color:#f5f5f5;"><span style="color:#9999a9; ">
+     &lt;!-- Navigation --&gt;</span> 
+        <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">nav</span> class<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"navbar navbar-expand-lg navbar-light bg-color fixed-top"</span> id<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"mainNav"</span><span style="color:#f8e947; ">&gt;</span> 
+             <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"container"</span><span style="color:#f8e947; ">&gt;</span> 
+                <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"navbar-brand js-scroll-trigger highlight-color"</span> href<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"#page-top"</span><span style="color:#f8e947; ">&gt;</span> 
+                     <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">h2</span> class<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"p-3 mb-0 text-uppercase text-nav"</span><span style="color:#f8e947; ">&gt;</span>Documentation<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">h2</span><span style="color:#f8e947; ">&gt;</span> 
+                ...
+        <span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">nav</span><span style="color:#f8e947; ">&gt;</span>
+                                </pre>
+     
+                                    </code>
+                                This step is optional since the black text may read well on the color you chose.
+                                However, if the color you chose is of a dark hue–the color white may offer a better
+                                contrast.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If you want that text to be of a color other than white, go to the
+                                <code>theme-style.css</code> file
+                                and find in line 51 the class <code>.tex-nav</code>, change there the color to any hex
+                                color you want.
                             </p>
                         </li>
                     </ul>
-                    <code>
-
-                                   <pre class="bg-pale-night rounded" style="color:#f5f5f5;"><span style="color:#9999a9; ">
-    &lt;!-- Navigation --&gt;</span> 
-       <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">nav</span> class<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"navbar navbar-expand-lg navbar-light bg-color fixed-top"</span> id<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"mainNav"</span><span style="color:#f8e947; ">&gt;</span> 
-            <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"container"</span><span style="color:#f8e947; ">&gt;</span> 
-               <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> class<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"navbar-brand js-scroll-trigger highlight-color"</span> href<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"#page-top"</span><span style="color:#f8e947; ">&gt;</span> 
-                    <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">h2</span> class<span style="color:#f5f5f5; ">=</span><span style="color:#26e482; ">"p-3 mb-0 text-uppercase text-nav"</span><span style="color:#f8e947; ">&gt;</span>Documentation<span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">h2</span><span style="color:#f8e947; ">&gt;</span> 
-               ...
-       <span style="color:#f8e947; ">&lt;/</span><span style="color:#AB8ECF; font-weight:bold; ">nav</span><span style="color:#f8e947; ">&gt;</span>
-                               </pre>
-    
-                                   </code>
-
                 </div>
                 <!-- Colors -->
 
                 <!-- Google Fonts  -->
                 <div id="fonts" class="padtop_30">
                     <div class="">
-                        <hr class="padtop_15">
+                        <hr>
                         <h1 class="text-color padbot_30">Google Fonts</h1>
                         <p class="text-color">Fonts are fun and fortunately they are easy to implement. I am using
                             Goolge fonts, check what they got <a href="https://fonts.google.com/">here</a>.
@@ -233,7 +239,7 @@
                 <!-- Dark -->
                 <div id="components" class="bg-color padtop_30 ">
                     <div class="pb-4">
-                        <hr class="padtop_15">
+                        <hr>
                         <h1 class="text-color padbot_30">Components</h1>
                         <p class="text-color">These are all the components that come with this theme</p>
                         <h3 class="text-color top_30">
@@ -241,7 +247,7 @@
                         </h3>
                         <!-- Navigation -->
                         <div class="padbot_30">
-                            <img class="d-block w-100" src="img/documentation/light-navbar.png">
+                            <img class="d-block w-100" src="/img/documentation/light-navbar.png">
                         </div>
                         <!-- Navigation -->
                         <code>
@@ -510,7 +516,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-6">
-                                        <a href="tabs.html" target="_blank" class="text-color-x">
+                                        <a href="tabs.html" target="_blank" class="text-color-x no-underline">
                                             <h2 class="text-color-x">Tabs Sample</h2>
                                         </a>
                                         <p class="text-color-x">Lorem ipsum dolor sit amet, consectetur
@@ -700,9 +706,9 @@
                             Masonry Layout Gallery with modal & carousel on click:
                         </h3>
                         <!-- ======= Masonry Layout Gallery ======= -->
-                        <div class="row p-0">
+                        <div class="row">
                             <!-- ======= Images ======= -->
-                            <div class="col masonry m-0">
+                            <div class="col masonry">
                                 <div class="item">
                                     <a href="#lightbox" data-toggle="modal" data-slide-to="0">
                                         <img src="https://via.placeholder.com/543x612/505050/FFFFFF/?text=IMG_543x612"
@@ -798,10 +804,10 @@
 <pre class="rounded bg-pale-night" style="color:#FFFFFF;">
     
     <span style="color:#9999a9; ">&lt;!-- ======= Masonry Layout Gallery With Modal/Carousel ======= --&gt;</span>
-        <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"container p-0 pb-4"</span><span style="color:#f8e947; ">&gt;</span>
+        <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"container pb-4"</span><span style="color:#f8e947; ">&gt;</span>
             <span style="color:#9999a9; ">&lt;!-- Images --&gt;</span>
             <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"row"</span><span style="color:#f8e947; ">&gt;</span>
-                <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"col masonry m-0"</span><span style="color:#f8e947; ">&gt;</span>
+                <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"col masonry"</span><span style="color:#f8e947; ">&gt;</span>
                     <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">div</span> class<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"item"</span><span style="color:#f8e947; ">&gt;</span>
                         <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">a</span> href<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"#lightbox"</span> data-toggle<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"modal"</span> data-slide-to<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"0"</span><span style="color:#f8e947; ">&gt;</span>
                             <span style="color:#f8e947; ">&lt;</span><span style="color:#AB8ECF; font-weight:bold; ">img</span> src<span style="color:#f8e947; ">=</span><span style="color:#26e482; ">"https://via.placeholder.com/543x612/505050/FFFFFF/?text=1_IMG_543x612"</span>
