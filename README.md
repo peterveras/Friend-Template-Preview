@@ -1,10 +1,10 @@
 # [Toucan](http://peterveras.com/toucan/index.html)
 
-[Toucan](http://peterveras.com/toucan/index.html) is a [Bootstrap](https://getbootstrap.com/) template created by [Peter Verastegui](http://peterveras.com) This template comes with a dark and light UI theme, that was built in such way that one can switch themes with one click. It was also designed with a colorful accent color that can be change with two simple lines of CSS.
+[Toucan](https://peterveras.com/toucan-template.html) is a [Bootstrap](https://getbootstrap.com/) template created by [Peter Verastegui](http://peterveras.com) This template comes with a dark and light UI theme, that was built in such way that one can switch themes with one click. It was also designed with a colorful accent color that can be change with two simple lines of CSS.
 
 ## Preview
 
-[![Toucan Preview](https://raw.githubusercontent.com/peterveras/Toucan-Theme-Documentation/main/Description/images/%2003_toucan_preview.jpg)](https://startbootstrap.github.io/startbootstrap-scrolling-nav/)
+[![Toucan Preview](https://github.com/peterveras/Toucan-Bootstrap-Theme/blob/main/img/preview/Home-page-Dark.png)](https://startbootstrap.github.io/startbootstrap-scrolling-nav/)
 
 **[View Live Preview](http://peterveras.com/toucan/index.html)**
 
