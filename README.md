@@ -4,9 +4,17 @@
 
 ## Preview
 
-[![Toucan Preview](https://github.com/peterveras/Toucan-Bootstrap-Theme/blob/main/img/preview/Home-page-Dark.png)](https://startbootstrap.github.io/startbootstrap-scrolling-nav/)
+[![Toucan Preview](https://github.com/peterveras/Toucan-Bootstrap-Theme/blob/main/img/preview/Home-page-Dark.png)](https://peterveras.github.io/Toucan-Bootstrap-Theme/index.html)
 
-**[View Live Preview](http://peterveras.com/toucan/index.html)**
+[![Toucan Preview](https://github.com/peterveras/Toucan-Bootstrap-Theme/blob/main/img/preview/Home-page-Light.png)](https://peterveras.github.io/Toucan-Bootstrap-Theme/index.html)
+
+[![Toucan Preview](https://github.com/peterveras/Toucan-Bootstrap-Theme/blob/main/img/preview/About-me.png)](https://peterveras.github.io/Toucan-Bootstrap-Theme/index.html)
+
+[![Toucan Preview](https://github.com/peterveras/Toucan-Bootstrap-Theme/blob/main/img/preview/Shop.png)](https://peterveras.github.io/Toucan-Bootstrap-Theme/index.html)
+
+[![Toucan Preview](https://github.com/peterveras/Toucan-Bootstrap-Theme/blob/main/img/preview/Blog-post.png)](https://peterveras.github.io/Toucan-Bootstrap-Theme/index.html)
+
+**[View Live Preview](https://peterveras.github.io/Toucan-Bootstrap-Theme/index.html)**
 
 ## Copyright and License
 
