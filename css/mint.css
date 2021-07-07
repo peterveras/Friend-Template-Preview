@@ -35,7 +35,7 @@
   --color-tertiary: #232325;
   --font-color: #232325;
   --links-color: #e60073;
-  --toggle-menu-icon: url("/toucan/img/icons/menu-light.svg");
+  --toggle-menu-icon: url("../img/icons/menu-light.svg");
 }
 .theme-dark {
   --color-primary: #26e482;
@@ -43,7 +43,7 @@
   --color-tertiary: white;
   --font-color: whitesmoke;
   --links-color: #ff5cad;
-  --toggle-menu-icon: url("/toucan/img/icons/menu-dark.svg");
+  --toggle-menu-icon: url("../img/icons/menu-dark.svg");
 }
 
 /* 1. Navigation */
@@ -90,11 +90,11 @@
 /* Left Arrow Icon */
 
 .carousel-control-prev-icon {
-  background-image: url("/toucan/img/icons/left-chevron.svg");
+  background-image: url("../img/icons/left-chevron.svg");
 }
 /* Right Arrow Icon */
 .carousel-control-next-icon {
-  background-image: url("/toucan/img/icons/right-chevron.svg");
+  background-image: url("../img/icons/right-chevron.svg");
 }
 
 .carousel-control-next-icon,
@@ -173,7 +173,7 @@ a.nav-link:hover {
 .hero-img-1 {
   height: 80vh; /* Change this number to change the height of the image */
   min-height: 500px;
-  background-image: url("/toucan/img/works/work-9/pexels-steve-johnson-1550564.jpg"); /* Change the image itself here */
+  background-image: url("../img/works/work-9/pexels-steve-johnson-1550564.jpg"); /* Change the image itself here */
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
@@ -196,7 +196,7 @@ button.navbar-toggler:focus {
 .primary-btn {
   background: var(--color-primary);
   border: solid 2px var(--color-primary);
-  padding: 10px 20px;
+  padding: 10px 8%;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
@@ -209,12 +209,12 @@ button.navbar-toggler:focus {
 .primary-btn:hover {
   background: var(--color-tertiary);
   border: solid 2px var(--color-tertiary);
-  padding: 10px 41px;
+  padding: 10px 8%;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  min-width: 160px;
+  min-width: 150px;
   color: var(--color-secondary);
   text-transform: uppercase;
 }
@@ -222,12 +222,12 @@ button.navbar-toggler:focus {
 .secondary-btn {
   background: var(--color-secondary);
   border: solid 2px var(--color-tertiary);
-  padding: 10px 41px;
+  padding: 10px 8%;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  min-width: 160px;
+  min-width: 150px;
   color: var(--color-tertiary);
   text-transform: uppercase;
 }
@@ -235,12 +235,12 @@ button.navbar-toggler:focus {
 .secondary-btn:hover {
   background: var(--color-tertiary);
   border: solid 2px var(--color-secondary);
-  padding: 10px 41px;
+  padding: 10px 8%;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  min-width: 160px;
+  min-width: 150px;
   color: var(--color-secondary);
   text-transform: uppercase;
 }
@@ -248,12 +248,12 @@ button.navbar-toggler:focus {
 .tertiary-btn {
   background: var(--color-secondary);
   border: solid 2px var(--color-secondary);
-  padding: 10px 41px;
+  padding: 10px 8%;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  min-width: 160px;
+  min-width: 150px;
   color: var(--font-color);
   text-transform: uppercase;
 }
@@ -261,12 +261,12 @@ button.navbar-toggler:focus {
 .tertiary-btn:hover {
   background: var(--color-tertiary);
   border: solid 2px var(--color-tertiary);
-  padding: 10px 41px;
+  padding: 10px 8%;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  min-width: 160px;
+  min-width: 150px;
   color: var(--color-secondary);
   text-transform: uppercase;
 }
@@ -274,7 +274,7 @@ button.navbar-toggler:focus {
 .primary-btn-exception {
   background: var(--color-primary);
   border: solid 2px var(--color-primary);
-  padding: 10px 20px;
+  padding: 10px 8%;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
@@ -287,12 +287,12 @@ button.navbar-toggler:focus {
 .primary-btn-exception:hover {
   background: var(--color-secondary);
   border: solid 2px var(--color-secondary);
-  padding: 10px 41px;
+  padding: 10px 8%;
   outline: 0;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  min-width: 160px;
+  min-width: 150px;
   color: var(--font-color);
   text-transform: uppercase;
 }
